@@ -4,6 +4,8 @@ Changelog
 Development
 ***********
 
+- Add Eaufrance Hubeau API for French river data (flow, stage)
+
 0.39.0 (27.06.2022)
 *******************
 
