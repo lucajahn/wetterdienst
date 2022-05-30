@@ -336,7 +336,7 @@ class ScalarValuesCore(metaclass=ABCMeta):
                 if par.name.startswith("QUALITY"):
                     continue
                 par_df = default_df.copy()
-                par_df.loc[:, Columns.PARAMETER.value] = par.value
+                par_df.loc[:, Columns.PARAMETER.value] = par.value.lower()
 
                 data.append(par_df)
 
@@ -449,12 +449,12 @@ class ScalarValuesCore(metaclass=ABCMeta):
 
                 parameter_df = self._collect_station_parameter(station_id, parameter, dataset)
 
-                if parameter_df.empty:
-                    parameter_df = self._create_empty_station_parameter_df(station_id, parameter, dataset)
-
                 # set dynamic resolution for services that have no fixed resolutions
                 if self.sr.resolution == Resolution.DYNAMIC:
                     self.sr.stations.dynamic_frequency = self.fetch_dynamic_frequency(station_id, parameter, dataset)
+
+                if parameter_df.empty:
+                    parameter_df = self._create_empty_station_parameter_df(station_id, parameter, dataset)
 
                 # TODO: we are coercing values here for conversion of units
                 #  however we later again coerce when concatenating DataFrames

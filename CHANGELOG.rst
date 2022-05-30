@@ -5,6 +5,7 @@ Development
 ***********
 
 - Add Eaufrance Hubeau API for French river data (flow, stage)
+- Fix explorer for EA Hydrology
 
 0.39.0 (27.06.2022)
 *******************

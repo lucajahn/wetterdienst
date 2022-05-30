@@ -17,7 +17,8 @@ from wetterdienst.provider.dwd.observation.metadata.dataset import (
 from wetterdienst.provider.dwd.observation.metadata.parameter import (
     DwdObservationParameter,
 )
-from wetterdienst.util.cache import FSSPEC_CLIENT_KWARGS, CacheExpiry, cache_dir
+from wetterdienst.settings import FSSPEC_CLIENT_KWARGS
+from wetterdienst.util.cache import CacheExpiry, cache_dir
 
 SKIP_DATASETS = (
     ("10_minutes", "wind_test"),

@@ -8,12 +8,8 @@ from typing import List, Optional, Union
 from fsspec.implementations.cached import WholeFileCacheFileSystem
 from fsspec.implementations.http import HTTPFileSystem
 
-from wetterdienst.util.cache import (
-    FSSPEC_CLIENT_KWARGS,
-    WD_CACHE_DISABLE,
-    CacheExpiry,
-    cache_dir,
-)
+from wetterdienst.settings import FSSPEC_CLIENT_KWARGS
+from wetterdienst.util.cache import WD_CACHE_DISABLE, CacheExpiry, cache_dir
 
 
 class NetworkFilesystemManager:

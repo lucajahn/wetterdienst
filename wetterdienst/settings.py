@@ -6,6 +6,10 @@ from dataclasses import dataclass
 
 from environs import Env
 
+# FSSPEC aiohttp client kwargs, may be used to pass extra arguments
+# such as proxies etc to aiohttp
+FSSPEC_CLIENT_KWARGS = {"headers": {"User-Agent": "wetterdienst/gutzemann@gmail.com"}}
+
 
 @dataclass
 class Settings:

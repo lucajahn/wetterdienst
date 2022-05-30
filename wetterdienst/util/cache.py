@@ -7,10 +7,6 @@ from enum import Enum
 
 import appdirs
 
-# FSSPEC aiohttp client kwargs, may be used to pass extra arguments
-# such as proxies etc to aiohttp
-FSSPEC_CLIENT_KWARGS = {}
-
 # Whether caching should be disabled at all.
 WD_CACHE_DISABLE = "WD_CACHE_DISABLE" in os.environ
 

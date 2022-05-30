@@ -288,6 +288,8 @@ def get_values(
             log.error("No data available for given constraints")
             sys.exit(1)
 
+    print(values_.df.to_csv("values.csv"))
+
     if sql_values:
         log.info(f"Filtering with SQL: {sql_values}")
 
