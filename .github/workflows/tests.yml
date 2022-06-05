@@ -52,13 +52,5 @@ jobs:
       run: .github/workflows/install.sh testing
       if: steps.poetry-cache-flag.outputs.cache-hit != 'true'
 
-    - name: Test (Windows) - single core
-      run: |
-        if [ "$RUNNER_OS" == "Windows" ]; then 
-          poetry run poe test-slow
-        fi
-    - name: Test (Linux/Mac) - multi core
-      run: |
-        if [ "$RUNNER_OS" != "Windows" ]; then
-          poetry run poe test
-        fi
+    - name: Test - multi core
+      run: poetry run poe test
