@@ -142,6 +142,8 @@ sphinx = { version = "^4.5", optional = true }
 sphinx-material = { version = "^0.0.30", optional = true }
 sphinx-autodoc-typehints = { version = "^1.11", optional = true }
 sphinxcontrib-svg2pdfconverter = { version = "^1.1", optional = true }
+sphinx-toolbox = "^3.1.2"
+
 tomlkit = { version = "^0.7", optional = true }
 ipython = { version = "^7.10", optional = true }
 ipython-genutils = { version = "^0.2", optional = true }
@@ -151,6 +153,7 @@ timezonefinder = "^5.2"
 diskcache = "^5.4.0"
 environs = "^9.4.0"
 scikit-learn = "^1.0.2"
+furo = "^2022.6.21"
 
 [tool.poetry.dev-dependencies]
 poethepoet = "^0.9"
@@ -212,7 +215,9 @@ docs = [
     "sphinx-autodoc-typehints",
     "sphinxcontrib-svg2pdfconverter",
     "matplotlib",
-    "ipython"
+    "ipython",
+    "sphinx-toolbox",
+    "furo"
 ]
 restapi = ["fastapi", "uvicorn"]
 explorer = ["plotly", "dash", "dash-bootstrap-components"]

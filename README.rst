@@ -22,11 +22,6 @@ Hohenpeissenberg I got with the help of wetterdienst; and I'm not sure about the
 
 *"We are the first generation to feel the effect of climate change and the last generation who can do something about it." - Barack Obama*
 
-.. overview_start_marker
-
-Overview
-########
-
 .. image:: https://github.com/earthobservations/wetterdienst/workflows/Tests/badge.svg
    :target: https://github.com/earthobservations/wetterdienst/actions?workflow=Tests
 .. image:: https://codecov.io/gh/earthobservations/wetterdienst/branch/main/graph/badge.svg
@@ -49,6 +44,11 @@ Overview
    :target: https://github.com/earthobservations/wetterdienst/blob/main/LICENSE
 .. image:: https://zenodo.org/badge/160953150.svg
    :target: https://zenodo.org/badge/latestdoi/160953150
+
+.. overview_start_marker
+
+Overview
+########
 
 Introduction
 ************
